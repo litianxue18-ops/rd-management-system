@@ -141,7 +141,7 @@ export default function RdDirectorWorkbenchPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 space-y-6">
-      <div className="flex justify-between items-start gap-4">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
         <div className="min-w-0">
           <h1 className="text-xl md:text-2xl xl:text-3xl font-semibold tracking-tight text-slate-900">
             {me ? `${me.name} · 研发中心负责人工作台` : '研发中心负责人工作台'}

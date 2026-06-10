@@ -186,7 +186,7 @@ export default function NewProjectPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 space-y-6">
-      <div className="flex justify-between items-start gap-4">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
         <div className="min-w-0">
           <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
             <Link href="/projects" className="hover:text-slate-900 inline-flex items-center gap-1">

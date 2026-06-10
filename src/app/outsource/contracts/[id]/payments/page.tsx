@@ -193,7 +193,7 @@ export default function PaymentsPage({
 
   return (
     <div className="max-w-4xl mx-auto px-4 md:px-8 py-6 space-y-6">
-      <div className="flex justify-between items-start gap-4">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
         <div className="min-w-0">
           <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
             <Link
@@ -313,7 +313,7 @@ export default function PaymentsPage({
         )}
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
         <Card className="border-slate-300 shadow-md">
           <CardContent className="py-4">
             <div className="text-xs text-muted-foreground mb-1">合同总额</div>

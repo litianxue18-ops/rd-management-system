@@ -225,8 +225,8 @@ export default async function ProjectOverviewPage({
 
   return (
     <div className="bg-slate-50 min-h-[calc(100vh-3.5rem)]">
-      {/* sticky header */}
-      <div className="sticky top-0 z-20 bg-white border-b-2 border-slate-200 shadow-sm">
+      {/* header */}
+      <div className="bg-white border-b-2 border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
           <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
             <Link href="/projects" className="hover:text-slate-900 inline-flex items-center gap-1">
@@ -351,7 +351,7 @@ export default async function ProjectOverviewPage({
                 href={`${base}/detail/members`}
                 linkLabel="查看成员明细"
               >
-                <div className="grid grid-cols-3 gap-x-6 gap-y-4 mb-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-4 mb-4">
                   <StatCell label="成员总数" value={`${project.members.length} 人`} />
                   <StatCell
                     label="负责人"
@@ -435,7 +435,7 @@ export default async function ProjectOverviewPage({
                 href={`${base}/detail/samples`}
                 linkLabel="查看样品台账"
               >
-                <div className="grid grid-cols-3 gap-x-6 gap-y-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-4">
                   <StatCell label="样品登记" value={`${sampleCnt} 条`} />
                   <StatCell label="废料登记" value={`${scrapCnt} 条`} />
                   <StatCell label="待监销" value={`${samplePending} 条`} tone="amber" />
@@ -452,7 +452,7 @@ export default async function ProjectOverviewPage({
                 href={`${base}/detail/trial`}
                 linkLabel="查看试制明细"
               >
-                <div className="grid grid-cols-3 gap-x-6 gap-y-4">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-4">
                   <StatCell label="试制任务" value={`${trialTotalCnt} 个`} />
                   <StatCell label="已完成" value={`${trialDoneCnt} 个`} tone="emerald" />
                   <StatCell label="转嫁费总额" value={fmtMoney(trialTransferTotal)} tone="blue" />

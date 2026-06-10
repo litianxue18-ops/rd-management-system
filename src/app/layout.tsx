@@ -31,7 +31,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <AppTopBar />
-        {children}
+        <div className="flex-1 w-full min-w-0">{children}</div>
         <Toaster />
       </body>
     </html>

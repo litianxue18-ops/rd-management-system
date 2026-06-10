@@ -148,7 +148,7 @@ export default function UserImportPage() {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               <div className="rounded-md border border-emerald-200 bg-emerald-50 px-4 py-3">
                 <div className="text-xs text-emerald-700">新建</div>
                 <div className="text-3xl md:text-4xl font-bold tabular-nums text-emerald-600 mt-1">
