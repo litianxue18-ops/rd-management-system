@@ -160,7 +160,7 @@ export default function WorkhourStatsPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-8 py-6 space-y-6">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 space-y-6">
       <div className="flex items-center justify-between gap-4 flex-wrap">
         <div>
           <h1 className="text-xl md:text-2xl xl:text-3xl font-semibold tracking-tight">

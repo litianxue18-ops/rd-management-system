@@ -67,7 +67,7 @@ export default function InboundImportPage() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-8 py-6 space-y-6">
+    <div className="max-w-3xl mx-auto px-4 md:px-8 py-6 space-y-6">
       <div>
         <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
           <Link

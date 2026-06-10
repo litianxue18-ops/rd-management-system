@@ -146,7 +146,7 @@ export default function EditProjectPage() {
 
   if (!form) {
     return (
-      <div className="max-w-7xl mx-auto px-8 py-6 space-y-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 space-y-6">
         <Skeleton className="h-10 w-64" />
         <Skeleton className="h-96 w-full" />
       </div>
@@ -155,7 +155,7 @@ export default function EditProjectPage() {
 
   if (status && status !== 'draft') {
     return (
-      <div className="max-w-7xl mx-auto px-8 py-6 space-y-6">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 space-y-6">
         <div className="text-sm text-rose-700">仅草稿状态可编辑,当前状态: {status}</div>
         <Button variant="outline" asChild>
           <Link href={`/projects/${id}`}>
@@ -168,7 +168,7 @@ export default function EditProjectPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-8 py-6 space-y-6">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 space-y-6">
       <div className="flex justify-between items-start gap-4">
         <div className="min-w-0">
           <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">

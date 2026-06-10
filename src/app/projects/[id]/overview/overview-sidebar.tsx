@@ -75,7 +75,7 @@ export function OverviewSidebar() {
   }
 
   return (
-    <nav className="sticky top-36 w-60 shrink-0 self-start max-h-[calc(100vh-11rem)] overflow-y-auto pr-2 text-sm">
+    <nav className="hidden md:block sticky top-36 w-60 shrink-0 self-start max-h-[calc(100vh-11rem)] overflow-y-auto pr-2 text-sm">
       <div className="text-xs text-muted-foreground mb-3 px-3 font-medium tracking-wide">
         档案目录
       </div>

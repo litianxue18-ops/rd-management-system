@@ -89,8 +89,8 @@ export function AdminSidebar() {
   const initial = me?.name ? me.name.charAt(0) : '?';
 
   return (
-    <aside className="w-60 shrink-0 border-r border-slate-200 bg-slate-50/50 flex flex-col h-full">
-      <div className="px-4 py-5 flex items-center gap-2.5">
+    <aside className="w-full md:w-60 shrink-0 border-b md:border-b-0 md:border-r border-slate-200 bg-slate-50/50 flex flex-col md:h-full">
+      <div className="hidden md:flex px-4 py-5 items-center gap-2.5">
         <div className="h-8 w-8 rounded-lg bg-blue-600 flex items-center justify-center text-white text-sm font-bold shrink-0">
           研
         </div>
@@ -101,8 +101,8 @@ export function AdminSidebar() {
           <div className="text-xs text-muted-foreground mt-0.5">系统配置</div>
         </div>
       </div>
-      <Separator />
-      <nav className="flex-1 px-2 py-3 space-y-0.5">
+      <Separator className="hidden md:block" />
+      <nav className="flex md:flex-col flex-1 overflow-x-auto md:overflow-visible gap-1 md:gap-0 md:space-y-0.5 px-2 py-2 md:py-3">
         {items.map((i) => {
           const Icon = i.icon;
           const active = path === i.href;
@@ -111,7 +111,7 @@ export function AdminSidebar() {
               key={i.href}
               href={i.href}
               className={cn(
-                'flex items-center px-3 py-2.5 rounded-md text-sm transition-colors',
+                'flex items-center shrink-0 whitespace-nowrap px-3 py-2.5 rounded-md text-sm transition-colors',
                 active
                   ? 'bg-blue-100 text-blue-800 font-semibold border-l-4 border-blue-600 -ml-px pl-[9px]'
                   : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
@@ -124,7 +124,7 @@ export function AdminSidebar() {
         })}
       </nav>
 
-      <div className="px-2 py-3">
+      <div className="hidden md:block px-2 py-3">
         <Link
           href="/workbench"
           className="flex items-center justify-between px-3 py-2 rounded-md text-sm text-slate-600 hover:bg-slate-100 hover:text-slate-900"
@@ -134,7 +134,7 @@ export function AdminSidebar() {
         </Link>
       </div>
 
-      <div className="mt-auto border-t border-slate-200">
+      <div className="hidden md:block mt-auto border-t border-slate-200">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <button

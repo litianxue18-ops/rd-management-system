@@ -124,7 +124,7 @@ export default async function ProjectDetailSectionPage({
     <div className="bg-slate-50 min-h-[calc(100vh-3.5rem)]">
       {/* sticky header */}
       <div className="sticky top-0 z-20 bg-white border-b-2 border-slate-200 shadow-sm">
-        <div className="max-w-7xl mx-auto px-8 py-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
           <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
             <Link
               href={`/projects/${projectId}/overview`}
@@ -148,7 +148,7 @@ export default async function ProjectDetailSectionPage({
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-8 py-6">{body}</div>
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-6">{body}</div>
     </div>
   );
 }

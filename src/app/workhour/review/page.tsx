@@ -171,7 +171,7 @@ export default function WorkhourReviewPage() {
   const allSelected = entries.length > 0 && selected.size === entries.length;
 
   return (
-    <div className="max-w-7xl mx-auto px-8 py-6 space-y-6 pb-24">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 space-y-6 pb-24">
       <div className="flex items-center justify-between gap-4 flex-wrap">
         <div>
           <h1 className="text-xl md:text-2xl xl:text-3xl font-semibold tracking-tight">
@@ -315,7 +315,7 @@ export default function WorkhourReviewPage() {
 
       {selected.size > 0 && (
         <div className="fixed bottom-0 left-0 right-0 border-t border-slate-200 bg-white/95 backdrop-blur z-50">
-          <div className="max-w-7xl mx-auto px-8 py-3 flex items-center justify-between gap-4">
+          <div className="max-w-7xl mx-auto px-4 md:px-8 py-3 flex items-center justify-between gap-4">
             <div className="text-sm">
               已选{' '}
               <Badge variant="secondary" className="font-mono tabular-nums">

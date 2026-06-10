@@ -36,9 +36,9 @@ export default async function AdminLayout({ children }: { children: React.ReactN
 
   // AppTopBar 占 h-14 (3.5rem), 这里减掉以避免页面整体超出 viewport.
   return (
-    <div className="flex min-h-[calc(100vh-3.5rem)] bg-white">
+    <div className="flex flex-col md:flex-row min-h-[calc(100vh-3.5rem)] bg-white">
       <AdminSidebar />
-      <main className="flex-1 overflow-auto p-6">{children}</main>
+      <main className="flex-1 overflow-auto p-4 md:p-6">{children}</main>
     </div>
   );
 }

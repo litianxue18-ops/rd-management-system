@@ -120,7 +120,7 @@ export default function SampleDetailPage({
 
   if (!data) {
     return (
-      <div className="max-w-4xl mx-auto px-8 py-6 space-y-4">
+      <div className="max-w-4xl mx-auto px-4 md:px-8 py-6 space-y-4">
         <Skeleton className="h-8 w-64" />
         <Skeleton className="h-40 w-full" />
       </div>
@@ -128,7 +128,7 @@ export default function SampleDetailPage({
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-8 py-6 space-y-6">
+    <div className="max-w-4xl mx-auto px-4 md:px-8 py-6 space-y-6">
       <div className="flex justify-between items-start gap-4">
         <div className="min-w-0">
           <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">

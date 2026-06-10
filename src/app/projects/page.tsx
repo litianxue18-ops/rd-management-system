@@ -156,8 +156,8 @@ export default function ProjectsListPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-8 py-6 space-y-6">
-      <div className="flex justify-between items-start gap-4">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 space-y-6">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3">
         <div className="min-w-0">
           <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
             <Link href="/workbench" className="hover:text-slate-900 inline-flex items-center gap-1">
@@ -187,7 +187,7 @@ export default function ProjectsListPage() {
       </div>
 
       {/* Stats bar */}
-      <div className="flex items-center justify-between gap-4 text-sm text-muted-foreground">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-sm text-muted-foreground">
         <div className="flex items-center gap-4 flex-wrap">
           <span>
             共 <span className="font-medium text-slate-900 tabular-nums">{count}</span> 项目
@@ -199,9 +199,9 @@ export default function ProjectsListPage() {
           <span>·</span>
           <span className="tabular-nums">{draftCount} 草稿</span>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 shrink-0">
           <Select value={statusFilter} onValueChange={setStatusFilter}>
-            <SelectTrigger className="h-8 w-32 text-sm">
+            <SelectTrigger className="h-8 w-28 sm:w-32 text-sm">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -214,11 +214,11 @@ export default function ProjectsListPage() {
               <SelectItem value="cancelled">已取消</SelectItem>
             </SelectContent>
           </Select>
-          <div className="relative max-w-xs">
+          <div className="relative flex-1 sm:flex-none sm:max-w-xs">
             <Search size={14} className="absolute left-2.5 top-1/2 -translate-y-1/2 text-slate-400" />
             <Input
               placeholder="搜索名称/编号..."
-              className="pl-8 h-8 text-sm w-56"
+              className="pl-8 h-8 text-sm w-full sm:w-56"
               value={q}
               onChange={(e) => setQ(e.target.value)}
             />

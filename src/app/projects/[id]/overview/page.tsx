@@ -227,7 +227,7 @@ export default async function ProjectOverviewPage({
     <div className="bg-slate-50 min-h-[calc(100vh-3.5rem)]">
       {/* sticky header */}
       <div className="sticky top-0 z-20 bg-white border-b-2 border-slate-200 shadow-sm">
-        <div className="max-w-7xl mx-auto px-8 py-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
           <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
             <Link href="/projects" className="hover:text-slate-900 inline-flex items-center gap-1">
               <ArrowLeft size={12} />
@@ -286,8 +286,8 @@ export default async function ProjectOverviewPage({
       </div>
 
       {/* main */}
-      <div className="max-w-7xl mx-auto px-8 py-6">
-        <div className="flex gap-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-6">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8">
           <OverviewSidebar />
 
           <div className="flex-1 min-w-0 space-y-6 max-w-5xl">

@@ -151,7 +151,7 @@ export default function ProductionWorkbenchPage() {
   const unreadNotifs = (notifs ?? []).filter((n) => !n.readAt);
 
   return (
-    <div className="max-w-7xl mx-auto px-8 py-6 space-y-6">
+    <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 space-y-6">
       <div className="flex justify-between items-start gap-4">
         <div className="min-w-0">
           <h1 className="text-xl md:text-2xl xl:text-3xl font-semibold tracking-tight text-slate-900">
