@@ -16,5 +16,10 @@ android/.idea/
 *.apk
 *.aab
 
+# signing secrets (NEVER commit — repo is public)
+*.keystore
+*.jks
+keystore.properties
+
 # misc
 .DS_Store
